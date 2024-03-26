@@ -19,8 +19,36 @@
     </table>
 
     <dialog>
-        <button autofocus>Close</button>
-        <p>Add new book</p>
+        <form>
+            <ul>
+                <li>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="book_title">
+                </li>
+                <li>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="book_author">
+                </li>
+                <li>
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" name="book_pages">
+                </li>
+                <li>
+                    <label class="select-label">
+                        Status:
+                        <select>
+                            <option value="default">Choose…</option>
+                            <option>Not read yet</option>
+                            <option>Already read it</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="button">
+                    <button type="submit">ADD</button>
+                    <button autofocus>CLOSE</button>
+                </li>              
+            </ul>
+        </form>
     </dialog>
     <button>NEW BOOK</button>
 </body>
